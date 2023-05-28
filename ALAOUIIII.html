@@ -1,0 +1,62 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Restaurant Web App</title>
+  <script>
+    // script.js
+function loadRandomCategoryPage() {
+  var categories = ['Lunch', 'Dinner', 'Sushi', 'Drinks']; // Add more categories as needed
+  var randomCategory = categories[Math.floor(Math.random() * categories.length)];
+  loadMenuItems(randomCategory);
+}
+
+function loadMenuItems(category) {
+  // Logic to load menu items for the selected category
+  console.log('Loading menu items for category:', category);
+}
+
+// TODO: Add the remaining steps mentioned in the assignment instructions (TODO: STEP 0, TODO: STEP 1, etc.)
+
+  </script>
+</head>
+<style>
+    /* styles.css */
+.tiles {
+  display: flex;
+  justify-content: space-around;
+}
+
+.tile {
+  width: 200px;
+  height: 150px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.tile:hover {
+  background-color: #c0c0c0;
+}
+
+</style>
+<body>
+  <div id="home-snippet"></div>
+  <div class="tiles">
+    <div class="tile" onclick="loadRandomCategoryPage()">
+      Specials
+    </div>
+    <div class="tile">
+      Menu
+    </div>
+    <div class="tile">
+      Map
+    </div>
+  </div>
+</body>
+</html>
